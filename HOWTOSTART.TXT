@@ -1,0 +1,3 @@
+I new terminal>
+
+npm run watch
