@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
         <header class="p-4">
             <div class="container portfolio__nav d-flex ">
                 <div class="portfolio__nav--name"><span>JULIA</span> <strong>HUANG</strong></div>
@@ -20,34 +19,63 @@
         </header>
 
         <main class="container-lg py-2">
-            <div class="row g-3 align-items-start">
+            <div class="row align-items-center">
+                <!-- LEFT SIDE = 8 columns -->
+                <div class="col-lg-8"><!------------------------ COL 2 --------------------------- -->
+                    <!-- NESTED GRID  -->
+                    <div class="row g-4 ">
+                    <!-------------------------------- 1 ROW ----------------->
+                    <div class="col-md-8 dublis">
+                        <section class=" portfolio_card portfolio__hero h-100">
+                            <!-- flower -->
+                            <div class="portfolio__card--flower"><img src="img/flower.png" alt="flower"></div>
+                            <h1 class="portfolio__card--title">
+                                <p>Artist Redefining</p>
+                                <p><span>Architecture</span> with</p>
+                                <p>AI-Driven Design</p>
+                            </h1>
+                        </section>
+                    </div>
 
-                <!-- INTRO text -->
-                <div class="col-lg-5 dublis">
-                    <section class=" portfolio_card portfolio__hero">
-                        <!-- flower -->
-                         <div class="portfolio__card--flower"><img src="img/flower.png" alt="flower"></div>
-                         
-                        <h1 class="portfolio__card--title">
-                        <p>Artist Redefining</p> <span>Architecture</span> <p>with AI-Driven Design</p>
-                        </h1>
-                    </section>
+                    <!-- Julia FOTO -->
+                    <div class="col-lg-4">
+                        <section class="portfolio__photo h-100"><img src="img/julia.png" alt="Julia">
+                        </section>
+                    </div>          
+                    <!-------------------------------- 2 ROW  ----------------->
+                    <!-- ABOUT -->
+                    <div class="col-lg-6">
+                        <section class="portfolio__card p-4 h-100 about" >
+                            <img src="img/ratas.png" alt="ratas">
+                            <p class="about__p">
+                            Julia Huang is an innovative AI artist, renowned for blending cutting-edge technology with creative expression.
+                            Based in LA, she crafts unique digital art experiences accessible globally.
+                            </p>
+                        </section>
+                    </div>
+
+                    <!-- CONTACT -->
+                    <div class="col-lg-6">
+                        <section class="p-4  h-100 contactme" >
+                            <div class="d-flex contactme__qa"><p>Have some questions?</p><span>↗</span></div>
+                            <h3 class="contactme__h3">Contact me</h3>
+                        </section>
+                    </div>
                 </div>
-
-                <!-- Julia FOTO -->
-                <div class="col-lg-4 portfolio__photo"><img src="img/julia.png" alt="Julia"></div>
+                </div>
                 
-                <!-- Musea + socials 3 -->
-                <aside class="col-lg-3">
+                <!-- RIGHT SIDE = 4 columns -->
+                <div class="col-lg-4 "><!------------------------ COL 2 ---------------------------------- -->
+                <!-- Musea  -->
                     <section class="portfolio__card musea p-3 h-100 mb-3">
                         <div class="musea__name d-flex mb-2">
                         Musea <span>↗</span>
                         </div>
                         <img src="img/sofa.png" class="w-100 rounded-4 mb-3" alt="Sofa project">
                         <ul class="list-unstyled m-0">
-                            <li class="border-bottom py-2">Elara</li>
-                            <li class="border-bottom py-2">Verve</li>
-                            <li class="py-2">Zephyr</li>
+                            <li class="py-4">Elara</li>
+                            <li class="py-4">Verve</li>
+                            <li class="py-4">Zephyr</li>
                         </ul>
                     </section>
 
@@ -57,26 +85,7 @@
                         <a href="#" class="portfolio__card--a">TWITTER</a>
                         <a href="#" class="portfolio__card--a">LINKEDIN</a>
                     </section>
-                </aside>
-
-                <!-- ABOUT -->
-                <div class="col-lg-5 about">
-                    <section class="portfolio__card p-4 h-100">
-                        <img src="img/ratas.png" alt="ratas">
-                        <p class="about__p">
-                        Julia Huang is an innovative AI artist, renowned for blending cutting-edge technology with creative expression.
-                        Based in LA, she crafts unique digital art experiences accessible globally.
-                        </p>
-                    </section>
                 </div>
-                <!-- CONTACT -->
-                <div class="col-lg-4 contactme">
-                    <section class="p-4  h-100">
-                        <div class="d-flex contactme__qa"><p>Have some questions?</p><span>↗</span></div>
-                        <h3 class="contactme__h3">Contact me</h3>
-                    </section>
-                </div>
-
             </div>
         </main>
     </body>

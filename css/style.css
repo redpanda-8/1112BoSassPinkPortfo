@@ -11956,12 +11956,16 @@ textarea.form-control-lg {
   font-style: Italic;
 }
 
+.portfolio__hero, .portfolio__photo {
+  min-height: 500px;
+}
+
 .portfolio__hero {
   position: relative;
-  height: 480px;
-  width: 565px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding: 3rem 3rem 4rem 3rem;
+  padding-right: 120px; /* atstumas nuo flower */
 }
 
 .dublis {
@@ -11977,35 +11981,35 @@ textarea.form-control-lg {
   position: absolute;
   top: 18px;
   right: 18px;
-  width: 120px;
-  height: 120px;
+}
+.portfolio__card--flower img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.portfolio__card--flower {
+  /* scales with box */
 }
 .portfolio__card--title {
   font-weight: 700;
-  size: 56px;
+  max-width: 480px;
+  font-size: 3rem;
   line-height: 100%;
-  position: absolute;
-  top: 225px;
-  left: 24px;
-  width: 475px;
-  height: 168px;
+}
+.portfolio__card--title p {
+  margin: 0;
 }
 .portfolio__card--title span {
   font-weight: 300;
   font-style: Italic;
-  font-size: 56px;
 }
 .portfolio__card--a {
   text-decoration: none;
-  width: 81px;
-  height: 11px;
   font-weight: 300;
   font-size: 15px;
 }
 .portfolio__photo {
-  overflow: hidden;
-  width: 330px;
-  height: 476px;
+  min-width: 330px;
 }
 .portfolio__photo img {
   width: 100%;
@@ -12014,10 +12018,10 @@ textarea.form-control-lg {
 
 .musea {
   width: 447px;
-  height: 726px;
   font-weight: 500;
   font-size: 25px;
   line-height: 100%;
+  min-height: 720px;
 }
 .musea img {
   width: 400px;
@@ -12027,8 +12031,10 @@ textarea.form-control-lg {
   font-size: 1.4em;
 }
 .musea li {
-  width: 400px;
-  height: 72px;
+  border-bottom: 3px solid #F8AFA6;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 2.4;
 }
 .musea__name {
   justify-content: space-between;
@@ -12037,33 +12043,50 @@ textarea.form-control-lg {
   height: 72px;
 }
 
-/*.border-bottom{
-border-bottom: 20px $accent-bg;
-}*/
+.musea ul li:last-child {
+  border-bottom: 0;
+}
+
+.about, .contactme {
+  min-height: 320px;
+}
+
 .about {
-  width: 448px;
-  height: 351px;
-  top: 649px;
-  left: 24px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 320px; /* wraps */
+}
+.about img {
+  position: absolute; /* flower sits in top-left */
+  top: 1rem;
+  left: 1rem;
+  width: 40px;
+  height: 40px;
 }
 .about__p {
   width: 296px;
   height: 150px;
-  margin: 110px 5px;
+  margin: 0; /* Bootstrap card padding already creates spacing */
   font-size: 20px;
   line-height: 25px;
   font-weight: 300;
 }
 
 .contactme {
-  width: 448px;
-  height: 351px;
-  top: 649px;
-  left: 496px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative; /* arrow stay in top-right */
   background: #F8AFA6;
   border-radius: 20px;
 }
 .contactme__qa {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  left: 1rem;
+  display: flex;
   justify-content: space-between;
 }
 .contactme__qa p {
@@ -12077,12 +12100,9 @@ border-bottom: 20px $accent-bg;
   font-weight: bold;
 }
 .contactme__h3 {
-  width: 302px;
-  height: 39px;
   font-weight: 500;
   font-size: 55px;
   line-height: 100%;
-  margin: 160px 5px;
 }
 
 .socialsfoo {
